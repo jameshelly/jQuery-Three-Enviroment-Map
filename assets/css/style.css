@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+html {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: rgba(32,32,32,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 12;
+    height: 32px;
+}
+
+footer {
+    background-color: rgba(32,32,32,0.5);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 12;
+    height: 32px;
+}
+
+nav ul {
+    display: block;
+}
+nav li {
+    display: inline;
+}
+
+#flexible-grid {
+    position: relative;
+    z-index: 10;
+    margin-top: 32px;
+}
+
+.viewport {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+	/*width scale*/
+	-moz-background-size: 100% 100%;
+	-ms-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;    
+}
+.viewport hgroup {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 50%;
+    margin-top: -16px;
+    width: 250px;
+    height: 16px;
+    padding: 5px;
+    /* border radius
+    -moz-border-radius:8px;
+    -ms-border-radius:8px;
+    -o-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px; 
+    */
+    background-color: rgba(255,255,255,0.75);
+    /* shadow 
+	-moz-box-shadow:2px 2px 4px 2px rgba(0,0,0,0.3);
+	-ms-box-shadow:2px 2px 4px 2px rgba(0,0,0,0.3);
+	-o-box-shadow:2px 2px 4px 2px rgba(0,0,0,0.3);
+	-webkit-box-shadow:4px 4px 4px rgba(0,0,0,0.5);
+	box-shadow:4px 4px 4px rgba(0,0,0,0.5); 
+	*/
+}
+
+.viewport hgroup h1 {
+    margin: 0 auto;
+    width: 80px;
+    color: #000;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.broswer-aspect {
+    min-width: auto;
+    min-height: auto;
+    max-width: 33%;
+    max-height: 33%;
+}
+
+#section-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.25);
+}
+
+#section-nav li {
+    padding: 5px;
+}
+
+#section-nav li a {
+    display: inline-table;
+    margin: 5px;
+    color: white;
+}
+
+#first-section {
+    background-image: url(../img/backgrounds/IMG_0131.jpg);
+    background-color: aqua;
+}
+#second-section {
+    background-image: url(../img/backgrounds/IMG_0151.jpg);
+    background-color: fuchsia;
+}
+#third-section {
+    background-image: url(../img/backgrounds/IMG_0523.jpg);
+    background-color: olive;
+}
+#fourth-section {
+    background-image: url(../img/backgrounds/IMG_2467.jpg);
+    background-color: yellow;
+}
+#fifth-section {
+    background-image: url(../img/backgrounds/IMG_2526.jpg);
+    background-color: blue;
+}
+#sixth-section {
+    background-image: url(../img/backgrounds/IMG_4164.jpg);
+    background-color: purple;
+}
+#seventh-section {
+    background-image: url(../img/backgrounds/IMG_7984.jpg);
+    background-color: red;
+}
+#eighth-section {
+    background-image: url(../img/backgrounds/IMG_8016.jpg);
+    background-color: gray;
+}
+#ninth-section {
+    background-image: url(../img/backgrounds/IMG_8511.jpg);
+    background-color: silver;
+}
+
+/* // Landscape phones and down */
+/*
+@media (max-width: 480px) { 
+    .broswer-aspect {
+    }
+    .viewport {
+        float: none;
+    }
+}
+*/
+/*
+// Landscape phone to portrait tablet
+@media (max-width: 768px) { 
+
+}
+*/
+/*
+// Portrait tablet to landscape and desktop
+@media (min-width: 768px) and (max-width: 980px) { 
+ }
+*/
+/*
+// Large desktop
+@media (min-width: 1200px) { .. }
+*/
+
+
+
+
+
