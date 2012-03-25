@@ -11,43 +11,6 @@ onMouseDownMouseX = 0, onMouseDownMouseY = 0,
 lon = 0, onMouseDownLon = 0,
 lat = 0, onMouseDownLat = 0,
 phi = 0, theta = 0;
-  
-/*
-function onDocumentMouseDown( event ) {
-	event.preventDefault();
-	isUserInteracting = true;
-	onPointerDownPointerX = event.clientX;
-	onPointerDownPointerY = event.clientY;
-	onPointerDownLon = lon;
-	onPointerDownLat = lat;
-}
-
-function onDocumentMouseMove( event ) {
-	if ( isUserInteracting ) {
-		lon = ( onPointerDownPointerX - event.clientX ) * 0.1 + onPointerDownLon;
-		lat = ( event.clientY - onPointerDownPointerY ) * 0.1 + onPointerDownLat;
-	}
-}
-
-function onDocumentMouseUp( event ) {
-	isUserInteracting = false;
-}
-
-function onDocumentMouseWheel( event ) {
-	// WebKit
-	if ( event.wheelDeltaY ) {
-		fov -= event.wheelDeltaY * 0.05;
-	// Opera / Explorer 9
-	} else if ( event.wheelDelta ) {
-		fov -= event.wheelDelta * 0.05;
-	// Firefox
-	} else if ( event.detail ) {
-		fov += event.detail * 1.0;
-	}
-	camera.projectionMatrix = THREE.Matrix4.makePerspective( fov, window.innerWidth / window.innerHeight, 1, 1100 );
-	render();
-}
-*/
 
 (function($) {
     $.fn.EnviromentMap = function() {
